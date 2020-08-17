@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="game">
+    <div class="ui container">
+      <h1 class="ui block center aligned violet header">
+        Number Guessing Game
+      </h1>
+      <div
+        class="ui centered card"
+        style="padding-left: 30px; padding-right: 30px;"
+        
+      >
+        <div class="ui icon header" style="padding-top: 30px;">
+          <p id="hint" class="ui small header"></p>
+        </div>
+        <div class="content">
+          <p class="center aligned header">Guess a number between</p>
+          <p class="center aligned header">
+            <span class="min-num"></span> and
+            <span class="max-num"></span>
+          </p>
+          <hr />
+          <p class="center aligned header" style="padding-top: 10px;">
+            Your Numbers:
+            <br />
+            <span id="guessed-nums"></span>
+          </p>
+          <hr />
+          <p class="center aligned header" style="padding-top: 10px;">
+            Guesses remaining:
+            <br />
+            <span id="guesses-remaining"></span>
+          </p>
+          <hr />
+        </div>
+        <div class="ui form">
+          <div class="field">
+            <label class="center aligned">Your Guess</label>
+            <input
+              type="number"
+              placeholder="Your Guess"
+              id="guess-input"
+              style="margin-bottom: 20px;"
+            />
+          </div>
+        </div>
+        <button
+          class="massive ui violet button center aligned"
+          style="margin-bottom: 20px;"
+          type="submit"
+          id="guess-btn"
+        >
+          Guess
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="App.js"></script>
+  </body>
+</html>
