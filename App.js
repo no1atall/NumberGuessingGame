@@ -1,8 +1,8 @@
 // Game Values
 let min = 1,
-  max = 20,
-  winningNum = rand(20),
-  guessesRemaining = 5,
+  max = 100,
+  winningNum = rand(max),
+  guessesRemaining = 7,
   guesses = [];
 
 //UI
